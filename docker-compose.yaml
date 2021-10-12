@@ -1,0 +1,6 @@
+version: "3.9"
+services:
+  greet_server:
+    build: ./greet_server
+    volumes:
+      - ./greet_server:/greet_backend
