@@ -4,3 +4,7 @@ services:
     build: ./greet_server
     volumes:
       - ./greet_server:/greet_backend
+    ports:
+      - '50051:50051'
+  medium_envoy:
+    build: ./envoy
