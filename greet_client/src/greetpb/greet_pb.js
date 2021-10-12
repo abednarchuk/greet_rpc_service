@@ -7,6 +7,7 @@
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -24,7 +25,7 @@ goog.exportSymbol('proto.greet.GreetResponse', null, global);
  * @extends {jspb.Message}
  * @constructor
  */
-proto.greet.GreetRequest = function(opt_data) {
+proto.greet.GreetRequest = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.greet.GreetRequest, jspb.Message);
@@ -45,7 +46,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.greet.GreetResponse = function(opt_data) {
+proto.greet.GreetResponse = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.greet.GreetResponse, jspb.Message);
@@ -60,43 +61,43 @@ if (goog.DEBUG && !COMPILED) {
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.greet.GreetRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.greet.GreetRequest.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.greet.GreetRequest} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.greet.GreetRequest.toObject = function(includeInstance, msg) {
-  var f, obj = {
-    firstName: jspb.Message.getFieldWithDefault(msg, 1, ""),
-    lastName: jspb.Message.getFieldWithDefault(msg, 2, "")
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.greet.GreetRequest.prototype.toObject = function (opt_includeInstance) {
+    return proto.greet.GreetRequest.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
+
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.greet.GreetRequest} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.greet.GreetRequest.toObject = function (includeInstance, msg) {
+    var f, obj = {
+      firstName: jspb.Message.getFieldWithDefault(msg, 1, ""),
+      lastName: jspb.Message.getFieldWithDefault(msg, 2, "")
+    };
+
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
 }
 
 
@@ -105,7 +106,7 @@ proto.greet.GreetRequest.toObject = function(includeInstance, msg) {
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.greet.GreetRequest}
  */
-proto.greet.GreetRequest.deserializeBinary = function(bytes) {
+proto.greet.GreetRequest.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
   var msg = new proto.greet.GreetRequest;
   return proto.greet.GreetRequest.deserializeBinaryFromReader(msg, reader);
@@ -119,24 +120,24 @@ proto.greet.GreetRequest.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.greet.GreetRequest}
  */
-proto.greet.GreetRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.greet.GreetRequest.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setFirstName(value);
-      break;
-    case 2:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setLastName(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setFirstName(value);
+        break;
+      case 2:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setLastName(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
@@ -147,7 +148,7 @@ proto.greet.GreetRequest.deserializeBinaryFromReader = function(msg, reader) {
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.greet.GreetRequest.prototype.serializeBinary = function() {
+proto.greet.GreetRequest.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.greet.GreetRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
@@ -161,7 +162,7 @@ proto.greet.GreetRequest.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.greet.GreetRequest.serializeBinaryToWriter = function(message, writer) {
+proto.greet.GreetRequest.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getFirstName();
   if (f.length > 0) {
@@ -184,7 +185,7 @@ proto.greet.GreetRequest.serializeBinaryToWriter = function(message, writer) {
  * optional string first_name = 1;
  * @return {string}
  */
-proto.greet.GreetRequest.prototype.getFirstName = function() {
+proto.greet.GreetRequest.prototype.getFirstName = function () {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
 
@@ -193,7 +194,7 @@ proto.greet.GreetRequest.prototype.getFirstName = function() {
  * @param {string} value
  * @return {!proto.greet.GreetRequest} returns this
  */
-proto.greet.GreetRequest.prototype.setFirstName = function(value) {
+proto.greet.GreetRequest.prototype.setFirstName = function (value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
 
@@ -202,7 +203,7 @@ proto.greet.GreetRequest.prototype.setFirstName = function(value) {
  * optional string last_name = 2;
  * @return {string}
  */
-proto.greet.GreetRequest.prototype.getLastName = function() {
+proto.greet.GreetRequest.prototype.getLastName = function () {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
@@ -211,7 +212,7 @@ proto.greet.GreetRequest.prototype.getLastName = function() {
  * @param {string} value
  * @return {!proto.greet.GreetRequest} returns this
  */
-proto.greet.GreetRequest.prototype.setLastName = function(value) {
+proto.greet.GreetRequest.prototype.setLastName = function (value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
 
@@ -220,42 +221,42 @@ proto.greet.GreetRequest.prototype.setLastName = function(value) {
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.greet.GreetResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.greet.GreetResponse.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.greet.GreetResponse} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.greet.GreetResponse.toObject = function(includeInstance, msg) {
-  var f, obj = {
-    result: jspb.Message.getFieldWithDefault(msg, 1, "")
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.greet.GreetResponse.prototype.toObject = function (opt_includeInstance) {
+    return proto.greet.GreetResponse.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
+
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.greet.GreetResponse} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.greet.GreetResponse.toObject = function (includeInstance, msg) {
+    var f, obj = {
+      result: jspb.Message.getFieldWithDefault(msg, 1, "")
+    };
+
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
 }
 
 
@@ -264,7 +265,7 @@ proto.greet.GreetResponse.toObject = function(includeInstance, msg) {
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.greet.GreetResponse}
  */
-proto.greet.GreetResponse.deserializeBinary = function(bytes) {
+proto.greet.GreetResponse.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
   var msg = new proto.greet.GreetResponse;
   return proto.greet.GreetResponse.deserializeBinaryFromReader(msg, reader);
@@ -278,20 +279,20 @@ proto.greet.GreetResponse.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.greet.GreetResponse}
  */
-proto.greet.GreetResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.greet.GreetResponse.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setResult(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setResult(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
@@ -302,7 +303,7 @@ proto.greet.GreetResponse.deserializeBinaryFromReader = function(msg, reader) {
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.greet.GreetResponse.prototype.serializeBinary = function() {
+proto.greet.GreetResponse.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.greet.GreetResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
@@ -316,7 +317,7 @@ proto.greet.GreetResponse.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.greet.GreetResponse.serializeBinaryToWriter = function(message, writer) {
+proto.greet.GreetResponse.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getResult();
   if (f.length > 0) {
@@ -332,7 +333,7 @@ proto.greet.GreetResponse.serializeBinaryToWriter = function(message, writer) {
  * optional string result = 1;
  * @return {string}
  */
-proto.greet.GreetResponse.prototype.getResult = function() {
+proto.greet.GreetResponse.prototype.getResult = function () {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
 
@@ -341,7 +342,7 @@ proto.greet.GreetResponse.prototype.getResult = function() {
  * @param {string} value
  * @return {!proto.greet.GreetResponse} returns this
  */
-proto.greet.GreetResponse.prototype.setResult = function(value) {
+proto.greet.GreetResponse.prototype.setResult = function (value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
 

@@ -8,3 +8,6 @@ services:
       - '50051:50051'
   medium_envoy:
     build: ./envoy
+    ports:
+      - '8000:8000'
+      # - '9901:9901'
